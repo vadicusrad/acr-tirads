@@ -1,3 +1,5 @@
+Приложение призвано упростить и ускорить определение категории TIRADS для узловых образований щитовидной железы на приеме врача ультразвуковой диагностики.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
