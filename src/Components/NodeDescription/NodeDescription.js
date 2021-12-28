@@ -3,14 +3,14 @@ function NodeDescription({ count }) {
   let descrText = "";
   if (count < 2) {
     tirads = 1;
-    descrText = "узел доброкачественный, без ТАБ";
+    descrText = "Узел доброкачественный, без ТАБ";
   } else if (count === 2) {
     tirads = 2;
-    descrText = "узел доброкачественный, без ТАБ";
+    descrText = "Узел доброкачественный, без ТАБ";
   } else if (count === 3) {
     tirads = 3;
     descrText =
-      "Вероятность рака мала, ТАБ при узле 2.5см и более,УЗ контроль при узле размером 1,5см и более";
+      "Вероятность рака мала, ТАБ при узле 2.5см и более, УЗ контроль при узле размером 1,5см и более";
   } else if (count >= 4 && count <= 6) {
     tirads = 4;
     descrText =

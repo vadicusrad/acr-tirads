@@ -1,17 +1,17 @@
 .app {
-  width: 1200px;
+  /* width: 1200px; */
   margin: 0 auto;
   padding: 30px;
-  background: rgba(102, 135, 197, 0.212);
+  /* background: rgba(102, 135, 197, 0.212); */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-h3 {
-  margin: 0;
+h1 {
+  text-align: center;
 }
+h3,
 h4 {
   margin: 0;
 }
@@ -19,9 +19,8 @@ h4 {
 .nodeCriterion {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  max-width: 470px;
   background: rgba(89, 127, 197, 0.212);
-
   padding: 10px;
 }
 
@@ -29,4 +28,21 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .app {
+    width: 100%;
+    padding: 5px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .node {
+    display: flex;
+    flex-direction: column;
+  }
 }
