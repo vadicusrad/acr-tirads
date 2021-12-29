@@ -8,7 +8,7 @@
 
 .question-window {
   display: none;
-  min-width: 450px;
+  width: 450px;
   min-height: 170px;
   background: white;
   position: absolute;
@@ -16,9 +16,15 @@
   right: -6px;
   z-index: 5;
   padding: 8px;
-  box-shadow: 12px 13px 23px 7px rgba(34, 60, 80, 0.24);
+  box-shadow: 12px 13px 23px 7px rgba(34, 60, 80, 0.438);
 }
 
 .question:hover .question-window {
   display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .question-window {
+    width: 90vw;
+  }
 }

@@ -17,7 +17,7 @@ h4 {
 .nodeCriterion {
   display: flex;
   flex-direction: column;
-  max-width: 470px;
+  width: 460px;
   background: rgba(120, 135, 163, 0.212);
   padding: 10px;
   position: relative;
@@ -30,9 +30,8 @@ h4 {
   font-size: 1.1rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .app {
-    width: 100%;
     padding: 5px;
   }
 
@@ -43,5 +42,14 @@ h4 {
   .node {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nodeCriterion {
+    width: 95%;
+  }
+  .question-window {
+    width: 95%;
   }
 }
