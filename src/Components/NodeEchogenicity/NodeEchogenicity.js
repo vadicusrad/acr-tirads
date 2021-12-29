@@ -1,6 +1,10 @@
+import QuestionIcon from "../QuestionIcon/QuestionIcon";
+import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
+
 function NodeEchogenicity({ editObject }) {
   return (
     <div className="nodeCriterion nodeEchogenicity">
+      <QuestionIcon reference={REFERENCEINFORMATION.echogenicity} />
       <h3>Эхогенность</h3>
 
       <label htmlFor="nodeEchogenicity-anechoic">

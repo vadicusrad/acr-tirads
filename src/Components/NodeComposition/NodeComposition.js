@@ -1,8 +1,9 @@
-import { useState } from "react";
-
+import QuestionIcon from "../QuestionIcon/QuestionIcon";
+import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
 function NodeComposition({ editObject }) {
   return (
     <div className="nodeCriterion nodeComposition">
+      <QuestionIcon reference={REFERENCEINFORMATION.composition} />
       <h3>Эхоструктура</h3>
 
       <label htmlFor="nodeComposition-cystic">
