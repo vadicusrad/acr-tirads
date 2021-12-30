@@ -1,3 +1,5 @@
+import "./NodeDescription.css";
+
 function NodeDescription({ count }) {
   let tirads = 0;
   let descrText = "";
@@ -21,8 +23,10 @@ function NodeDescription({ count }) {
       "Вероятность рака значителная, ТАБ при узле 1см и более, УЗ контроль при узле размером 0.5см и более";
   }
   return (
-    <div className="nodeCriterion nodeDescription">
-      <h4>TIRADS {tirads}</h4>
+    <div className="nodeCriterion nodeDescription ">
+      <h4>
+        Количество баллов {count} - ACR TIRADS {tirads}
+      </h4>
 
       <p>{descrText}</p>
     </div>
