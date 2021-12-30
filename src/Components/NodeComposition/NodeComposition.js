@@ -1,5 +1,6 @@
 import QuestionIcon from "../QuestionIcon/QuestionIcon";
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
+
 function NodeComposition({ editObject }) {
   return (
     <div className="nodeCriterion nodeComposition">

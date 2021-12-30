@@ -8,23 +8,27 @@ import NodeEchogenicFoci from "./Components/NodeEchogenicFoci/NodeEchogenicFoci"
 import NodeDescription from "./Components/NodeDescription/NodeDescription";
 
 function App() {
-  const [state, setState] = useState({
+  const [compositionCount, setCompositionCount] = useState(0);
+
+  const [pointState, setPointState] = useState({
     nodeComposition: 0,
     nodeEchogenicity: 0,
     nodeShape: 0,
     nodeMargin: 0,
     nodeEchogenicFoci: 0,
   });
-  const [compositionCount, setCompositionCount] = useState(0);
 
   const editObject = (name, value) => {
-    const newObj = Object.assign({}, state);
+    const newObj = Object.assign({}, pointState);
     newObj[name] = Number(value);
-    setState(newObj);
+    setPointState(newObj);
   };
 
   useEffect(() => {
-    const pointsSum = Object.values(state).reduce(function (sum, currentValue) {
+    const pointsSum = Object.values(pointState).reduce(function (
+      sum,
+      currentValue
+    ) {
       return sum + currentValue;
     });
     setCompositionCount(pointsSum);

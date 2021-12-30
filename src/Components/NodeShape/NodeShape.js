@@ -1,8 +1,11 @@
+import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
+import QuestionIcon from "../QuestionIcon/QuestionIcon";
+
 function NodeShape({ editObject }) {
   return (
     <div className="nodeCriterion nodeShape">
+      <QuestionIcon reference={REFERENCEINFORMATION.shape} />
       <h3>Форма</h3>
-
       <label htmlFor="nodeShape-wider">
         <input
           name="nodeShape"
@@ -13,7 +16,6 @@ function NodeShape({ editObject }) {
         />
         Шире чем выше
       </label>
-
       <label htmlFor="nodeShape-taller">
         <input
           name="nodeShape"

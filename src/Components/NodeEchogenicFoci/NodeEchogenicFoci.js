@@ -1,6 +1,9 @@
+import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
+import QuestionIcon from "../QuestionIcon/QuestionIcon";
 function NodeEchogenicFoci({ editObject }) {
   return (
     <div className="nodeCriterion nodeEchogenicFoci">
+      <QuestionIcon reference={REFERENCEINFORMATION.echogenicFoci} />
       <h3>Включения</h3>
 
       <label htmlFor="nodeEchogenicFoci-none">

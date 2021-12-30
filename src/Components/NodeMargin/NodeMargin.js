@@ -1,6 +1,9 @@
+import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
+import QuestionIcon from "../QuestionIcon/QuestionIcon";
 function NodeMargin({ editObject }) {
   return (
     <div className="nodeCriterion nodeMargin">
+      <QuestionIcon reference={REFERENCEINFORMATION.margin} />
       <h3>Контур</h3>
 
       <label htmlFor="nodeMargin-smooth">
