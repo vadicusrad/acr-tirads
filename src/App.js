@@ -32,7 +32,7 @@ function App() {
       return sum + currentValue;
     });
     setCompositionCount(pointsSum);
-  });
+  }, [pointState]);
 
   return (
     <div className="app">
