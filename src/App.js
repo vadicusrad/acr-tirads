@@ -1,12 +1,11 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import NodeComposition from "./Components/NodeComposition/NodeComposition";
-import NodeEchogenicity from "./Components/NodeEchogenicity/NodeEchogenicity";
-import NodeShape from "./Components/NodeShape/NodeShape";
-import NodeMargin from "./Components/NodeMargin/NodeMargin";
-import NodeEchogenicFoci from "./Components/NodeEchogenicFoci/NodeEchogenicFoci";
-import NodeDescription from "./Components/NodeDescription/NodeDescription";
-import Navbar from "./Components/Navbar/Navbar";
+import { Routes, Route, Link } from "react-router-dom";
+import About from "./Components/About/about";
+import Links from "./Components/Links/Links";
+import Tirads from "./Components/Tirads/Tirads";
+import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
+import Layout from "./Components/Layout/Layout";
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);
@@ -33,21 +32,26 @@ function App() {
       return sum + currentValue;
     });
     setCompositionCount(pointsSum);
-    console.log("yoyos");
   }, [pointState]);
 
   return (
     <div className="app">
-      <Navbar />
-      <h1>TI-RADS — диагностика узловых поражений щитовидной железы</h1>
-      <div className="node">
-        <NodeComposition editObject={editObject} />
-        <NodeEchogenicity editObject={editObject} />
-        <NodeShape editObject={editObject} />
-        <NodeMargin editObject={editObject} />
-        <NodeEchogenicFoci editObject={editObject} />
-        <NodeDescription count={compositionCount} />
-      </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route
+            index
+            element={
+              <Tirads
+                editObject={editObject}
+                compositionCount={compositionCount}
+              />
+            }
+          />
+          <Route path="about" element={<About />} />
+          <Route path="links" element={<Links />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
