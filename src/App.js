@@ -6,6 +6,7 @@ import NodeShape from "./Components/NodeShape/NodeShape";
 import NodeMargin from "./Components/NodeMargin/NodeMargin";
 import NodeEchogenicFoci from "./Components/NodeEchogenicFoci/NodeEchogenicFoci";
 import NodeDescription from "./Components/NodeDescription/NodeDescription";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);
@@ -32,10 +33,12 @@ function App() {
       return sum + currentValue;
     });
     setCompositionCount(pointsSum);
+    console.log("yoyos");
   }, [pointState]);
 
   return (
     <div className="app">
+      <Navbar />
       <h1>TI-RADS — диагностика узловых поражений щитовидной железы</h1>
       <div className="node">
         <NodeComposition editObject={editObject} />

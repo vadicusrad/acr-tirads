@@ -1,0 +1,29 @@
+.navbar {
+  height: 90px;
+  background-color: rgb(116, 158, 236);
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 100px;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+.navbar-link {
+  color: white;
+  margin-right: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
