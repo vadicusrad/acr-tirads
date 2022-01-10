@@ -9,6 +9,7 @@
   box-sizing: border-box;
   padding-left: 30px;
   padding-right: 100px;
+  box-sizing: border-box;
 }
 
 .navbar-logo {
@@ -29,4 +30,17 @@
 }
 .active {
   text-decoration: underline;
+}
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar-logo {
+    font-size: 1.6rem;
+  }
+
+  .navbar-links {
+    display: none;
+  }
 }

@@ -26,6 +26,7 @@ function App() {
     },
     [pointState]
   );
+
   // const editObject = (name, value) => {
   //   const newObj = Object.assign({}, pointState);
   //   newObj[name] = Number(value);

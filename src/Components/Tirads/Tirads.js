@@ -4,6 +4,7 @@ import NodeEchogenicity from "../NodeEchogenicity/NodeEchogenicity";
 import NodeShape from "../NodeShape/NodeShape";
 import NodeMargin from "../NodeMargin/NodeMargin";
 import NodeDescription from "../NodeDescription/NodeDescription";
+import "./Tirads.css";
 
 function Tirads({ editObject, compositionCount }) {
   return (
