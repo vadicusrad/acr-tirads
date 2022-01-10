@@ -1,6 +1,6 @@
 import "./App.css";
-import { useEffect, useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { useCallback, useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import About from "./Components/About/about";
 import Links from "./Components/Links/Links";
 import Tirads from "./Components/Tirads/Tirads";
@@ -18,11 +18,19 @@ function App() {
     nodeEchogenicFoci: 0,
   });
 
-  const editObject = (name, value) => {
-    const newObj = Object.assign({}, pointState);
-    newObj[name] = Number(value);
-    setPointState(newObj);
-  };
+  const editObject = useCallback(
+    (name, value) => {
+      const newObj = Object.assign({}, pointState);
+      newObj[name] = Number(value);
+      setPointState(newObj);
+    },
+    [pointState]
+  );
+  // const editObject = (name, value) => {
+  //   const newObj = Object.assign({}, pointState);
+  //   newObj[name] = Number(value);
+  //   setPointState(newObj);
+  // };
 
   useEffect(() => {
     const pointsSum = Object.values(pointState).reduce(function (

@@ -9,12 +9,12 @@ function Navbar() {
       <ul className="navbar-links">
         <li>
           <NavLink className="navbar-link" to="/">
-            tirads
+            TIRADS
           </NavLink>
         </li>
         <li>
           <NavLink className="navbar-link" to="/links">
-            links
+            Ссылки
           </NavLink>
         </li>
         <li>
