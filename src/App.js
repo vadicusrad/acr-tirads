@@ -27,12 +27,6 @@ function App() {
     [pointState]
   );
 
-  // const editObject = (name, value) => {
-  //   const newObj = Object.assign({}, pointState);
-  //   newObj[name] = Number(value);
-  //   setPointState(newObj);
-  // };
-
   useEffect(() => {
     const pointsSum = Object.values(pointState).reduce(function (
       sum,

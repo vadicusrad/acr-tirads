@@ -31,6 +31,71 @@
 .active {
   text-decoration: underline;
 }
+.navbar-burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+.navbar-burger:after {
+  content: "";
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  height: 4px;
+  bottom: 0;
+}
+
+.navbar-burger:before {
+  content: "";
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  height: 4px;
+  top: 0;
+}
+
+.navbar-burger span {
+  position: absolute;
+  width: 30px;
+  background-color: white;
+  height: 4px;
+  top: 13px;
+}
+
+.navbar-burger-menu {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(103, 143, 148, 0.979);
+  position: absolute;
+  top: 90px;
+  left: 0;
+  color: white;
+  transform: translateX(-100%);
+  justify-content: center;
+  display: flex;
+  z-index: 2;
+  transition: all 0.4s;
+}
+.navbar-burger-menu-open {
+  transform: translateX(0);
+}
+
+.navbar-burger-links {
+  list-style: none;
+}
+.navbar-burger-link {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar-burger-menu li {
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 1024px) {
   .navbar {
     padding-left: 20px;
@@ -42,5 +107,8 @@
 
   .navbar-links {
     display: none;
+  }
+  .navbar-burger {
+    display: block;
   }
 }
