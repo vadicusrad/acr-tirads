@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 function Navbar() {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false);
