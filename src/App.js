@@ -6,6 +6,7 @@ import Links from "./Components/Links/Links";
 import Tirads from "./Components/Tirads/Tirads";
 import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
 import Layout from "./Components/Layout/Layout";
+import TirVolume from "./Components/TirVolume/TirVolume";
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);
@@ -52,6 +53,7 @@ function App() {
           />
           <Route path="about" element={<About />} />
           <Route path="links" element={<Links />} />
+          <Route path="tireoid_volume" element={<TirVolume />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

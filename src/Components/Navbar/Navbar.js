@@ -28,6 +28,11 @@ function Navbar() {
             about
           </NavLink>
         </li>
+        <li>
+          <NavLink className="navbar-link" to="/tireoid_volume">
+            Обьем щитовидной железы
+          </NavLink>
+        </li>
       </ul>
       <div className="navbar-burger" onClick={() => toggleBurgerMenu()}>
         <span></span>
