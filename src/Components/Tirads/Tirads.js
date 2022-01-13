@@ -8,7 +8,7 @@ import "./Tirads.css";
 
 function Tirads({ editObject, compositionCount }) {
   return (
-    <div className="tirads">
+    <div className="component tirads">
       <h2 className="component-title">
         TI-RADS — диагностика узловых поражений щитовидной железы
       </h2>

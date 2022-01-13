@@ -1,5 +1,5 @@
 function Links() {
-  return <div className="links">Links</div>;
+  return <div className="component links">Links</div>;
 }
 
 export default Links;

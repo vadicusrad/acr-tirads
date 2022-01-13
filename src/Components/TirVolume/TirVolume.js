@@ -46,7 +46,7 @@ function TirVolume() {
   }
 
   return (
-    <div className="tirVolume">
+    <div className="component tirVolume">
       <h2 className="component-title">Расчет объема щитовидной железы</h2>
       <div className="tirVolume-inputs">
         <label htmlFor="tirVolume-isthmus">
