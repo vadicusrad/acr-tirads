@@ -19,6 +19,11 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
+          <NavLink className="navbar-link" to="/tireoid_volume">
+            Обьем щитовидной железы
+          </NavLink>
+        </li>
+        <li>
           <NavLink className="navbar-link" to="/links">
             Ссылки
           </NavLink>
@@ -26,11 +31,6 @@ function Navbar() {
         <li>
           <NavLink className="navbar-link" to="/about">
             about
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="navbar-link" to="/tireoid_volume">
-            Обьем щитовидной железы
           </NavLink>
         </li>
       </ul>
@@ -50,6 +50,15 @@ function Navbar() {
               to="/"
             >
               TIRADS
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              onClick={() => toggleBurgerMenu()}
+              className="navbar-burger-link"
+              to="/tireoid_volume"
+            >
+              Обьем щитовидной железы
             </NavLink>
           </li>
           <li>

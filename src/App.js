@@ -51,9 +51,10 @@ function App() {
               />
             }
           />
+          <Route path="tireoid_volume" element={<TirVolume />} />
           <Route path="about" element={<About />} />
           <Route path="links" element={<Links />} />
-          <Route path="tireoid_volume" element={<TirVolume />} />
+
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

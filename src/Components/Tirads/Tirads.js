@@ -9,7 +9,9 @@ import "./Tirads.css";
 function Tirads({ editObject, compositionCount }) {
   return (
     <div className="tirads">
-      <h1>TI-RADS — диагностика узловых поражений щитовидной железы</h1>
+      <h2 className="component-title">
+        TI-RADS — диагностика узловых поражений щитовидной железы
+      </h2>
       <div className="node">
         <NodeComposition editObject={editObject} />
         <NodeEchogenicity editObject={editObject} />
