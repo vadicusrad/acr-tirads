@@ -24,6 +24,11 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
+          <NavLink className="navbar-link" to="/prostate_volume">
+            Объем простаты
+          </NavLink>
+        </li>
+        <li>
           <NavLink className="navbar-link" to="/links">
             Ссылки
           </NavLink>
@@ -59,6 +64,15 @@ function Navbar() {
               to="/tireoid_volume"
             >
               Обьем щитовидной железы
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              onClick={() => toggleBurgerMenu()}
+              className="navbar-burger-link"
+              to="/prostate_volume"
+            >
+              Объем простаты
             </NavLink>
           </li>
           <li>

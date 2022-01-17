@@ -7,6 +7,7 @@ import Tirads from "./Components/Tirads/Tirads";
 import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
 import Layout from "./Components/Layout/Layout";
 import TirVolume from "./Components/TirVolume/TirVolume";
+import ProstateVolumeCalc from "./Components/ProstateVolumeCalc/ProstateVolumeCalc";
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);
@@ -52,6 +53,7 @@ function App() {
             }
           />
           <Route path="tireoid_volume" element={<TirVolume />} />
+          <Route path="prostate_volume" element={<ProstateVolumeCalc />} />
           <Route path="about" element={<About />} />
           <Route path="links" element={<Links />} />
 
