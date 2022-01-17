@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
-import QuestionIcon from "../QuestionIcon/QuestionIcon";
+import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
 function NodeEchogenicFoci({ editObject }) {
   const [fociCount, setFociCount] = useState(0);
 

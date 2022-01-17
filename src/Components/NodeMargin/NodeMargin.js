@@ -1,5 +1,5 @@
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
-import QuestionIcon from "../QuestionIcon/QuestionIcon";
+import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
 function NodeMargin({ editObject }) {
   return (
     <div className="nodeCriterion nodeMargin">

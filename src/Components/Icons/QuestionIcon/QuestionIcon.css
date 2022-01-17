@@ -9,7 +9,7 @@
 .question-window {
   display: none;
   width: 450px;
-  min-height: 170px;
+  min-height: 50px;
   background: white;
   position: absolute;
   top: 35px;

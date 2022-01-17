@@ -1,6 +1,8 @@
 import "./ProstateVolumeCalc.css";
 import CommonVolumeCalc from "../CommonVolumeCalc/CommonVolumeCalc";
 import { useState } from "react";
+import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
+import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
 
 function ProstateVolumeCalc() {
   const [prostateParams, setProstateParams] = useState({});
@@ -16,7 +18,9 @@ function ProstateVolumeCalc() {
   return (
     <div className="component prostateVolumeCalc">
       <h2 className="component-title">Расчет объема предстательной железы</h2>
+
       <div className="prostateVolumeCalc-inputs">
+        <QuestionIcon reference={REFERENCEINFORMATION.prostateVolumeCalc} />
         <label htmlFor="prostateVolumeCalc-hight">
           <span>Высота:</span>
           <span>

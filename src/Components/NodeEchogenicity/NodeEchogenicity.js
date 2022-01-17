@@ -1,4 +1,4 @@
-import QuestionIcon from "../QuestionIcon/QuestionIcon";
+import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
 
 function NodeEchogenicity({ editObject }) {
