@@ -1,0 +1,24 @@
+.bodyMassIndex-inputs input {
+  margin: 10px;
+}
+.bodyMassIndex-result {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .bodyMassIndex {
+    padding: 10px;
+  }
+  .bodyMassIndex-inputs {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .bodyMassIndex-inputs input {
+    font-size: 1.3rem;
+  }
+  .bodyMassIndex-result {
+    font-size: 1.4rem;
+  }
+}

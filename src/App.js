@@ -8,6 +8,7 @@ import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
 import Layout from "./Components/Layout/Layout";
 import TirVolume from "./Components/TirVolume/TirVolume";
 import ProstateVolumeCalc from "./Components/ProstateVolumeCalc/ProstateVolumeCalc";
+import BodyMassIndex from "./Components/BudyMassIndex/BodyMassIndex";
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);
@@ -54,6 +55,7 @@ function App() {
           />
           <Route path="tireoid_volume" element={<TirVolume />} />
           <Route path="prostate_volume" element={<ProstateVolumeCalc />} />
+          <Route path="body_mass_index" element={<BodyMassIndex />} />
           <Route path="about" element={<About />} />
           <Route path="links" element={<Links />} />
 
