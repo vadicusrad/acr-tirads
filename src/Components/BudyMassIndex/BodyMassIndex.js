@@ -1,5 +1,7 @@
 import "./BodyMassIndex.css";
 import { useState } from "react";
+import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
+import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
 
 function BodyMassIndex() {
   const [bodyParams, setBodyParams] = useState({ mass: 0, height: 1 });
@@ -19,6 +21,7 @@ function BodyMassIndex() {
     <div className="component bodyMassIndex">
       <h2 className="component-title">Расчет индекса массы тела</h2>
       <div className="bodyMassIndex-inputs">
+        <QuestionIcon reference={REFERENCEINFORMATION.bodyMassIndex} />
         <input
           placeholder="Масса тела в кг"
           name="mass"
@@ -36,10 +39,10 @@ function BodyMassIndex() {
         />
       </div>
       <div className="bodyMassIndex-result">
-        {`Индекс массы тела: ${bodyMassIndexCalc(
-          bodyParams.mass,
-          bodyParams.height
-        )}`}
+        <h3>
+          Индекс массы тела:{" "}
+          {bodyMassIndexCalc(bodyParams.mass, bodyParams.height)}
+        </h3>
       </div>
     </div>
   );
