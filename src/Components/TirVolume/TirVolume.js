@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./TirVolume.css";
 import TirResultParams from "../TirResultParams/TirResultParams";
+import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
+import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
+
 function TirVolume() {
   const [tirLinearParams, setTirLinearParams] = useState({
     isthmus: 0,
@@ -49,6 +52,7 @@ function TirVolume() {
     <div className="component tirVolume">
       <h2 className="component-title">Расчет объема щитовидной железы</h2>
       <div className="tirVolume-inputs">
+        <QuestionIcon reference={REFERENCEINFORMATION.tireoidVolume} />
         <label htmlFor="tirVolume-isthmus">
           <span>Перешеек</span>
           <span>
