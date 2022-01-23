@@ -40,7 +40,7 @@ function Navbar() {
         </li>
         <li>
           <NavLink className="navbar-link" to="/about">
-            about
+            О приложении
           </NavLink>
         </li>
       </ul>
@@ -104,7 +104,7 @@ function Navbar() {
               className="navbar-burger-link"
               to="/about"
             >
-              about
+              О приложении
             </NavLink>
           </li>
         </ul>

@@ -1,7 +1,7 @@
 import "./App.css";
 import { useCallback, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import About from "./Components/About/about";
+import About from "./Components/About/About";
 import Links from "./Components/Links/Links";
 import Tirads from "./Components/Tirads/Tirads";
 import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";

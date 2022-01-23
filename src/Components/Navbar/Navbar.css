@@ -24,9 +24,10 @@
 }
 .navbar-link {
   color: white;
-  margin-right: 50px;
+  margin-right: 30px;
   cursor: pointer;
   text-decoration: none;
+  width: 150px;
 }
 .active {
   text-decoration: underline;
@@ -109,6 +110,6 @@
     display: none;
   }
   .navbar-burger {
-    display: block;
+    display: flex;
   }
 }
