@@ -38,11 +38,6 @@ function Navbar() {
             Ссылки
           </NavLink>
         </li>
-        <li>
-          <NavLink className="navbar-link" to="/about">
-            О приложении
-          </NavLink>
-        </li>
       </ul>
       <div className="navbar-burger" onClick={() => toggleBurgerMenu()}>
         <span></span>
