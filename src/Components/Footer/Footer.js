@@ -7,16 +7,6 @@ function Footer() {
   return (
     <div className="footer">
       <ul className="footer-nav">
-        {/* <li>
-          <NavLink className="navbar-link" to="/">
-            TIRADS
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="navbar-link" to="/tireoid_volume">
-            Обьем щитовидной железы
-          </NavLink>
-        </li> */}
         <li>
           <NavLink className="navbar-link" to="/links">
             Ссылки
