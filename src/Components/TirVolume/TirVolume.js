@@ -174,7 +174,7 @@ function TirVolume() {
         tirLinearParams={tirLinearParams}
       />
       <button className="tirVolume-resetBtn" onClick={() => resetState()}>
-        Reset
+        Очистить
       </button>
     </div>
   );

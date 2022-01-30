@@ -8,7 +8,7 @@ import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
 import Layout from "./Components/Layout/Layout";
 import TirVolume from "./Components/TirVolume/TirVolume";
 import ProstateVolumeCalc from "./Components/ProstateVolumeCalc/ProstateVolumeCalc";
-import BodyMassIndex from "./Components/BudyMassIndex/BodyMassIndex";
+import BodyMassIndex from "./Components/BodyMassIndex/BodyMassIndex";
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);

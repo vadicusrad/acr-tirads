@@ -12,6 +12,17 @@
   padding: 15px;
 }
 
+.bodyMassIndex-resetBtn {
+  font-size: 1.2rem;
+  padding: 10px;
+  background-color: rgb(240, 102, 60);
+  border: none;
+  color: wheat;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 500px) {
   .bodyMassIndex {
     padding: 10px;
