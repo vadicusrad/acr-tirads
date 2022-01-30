@@ -6,14 +6,14 @@ import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
 
 function TirVolume() {
   const [tirLinearParams, setTirLinearParams] = useState({
-    isthmus: 0,
+    isthmus: "",
 
-    right_h: 1,
-    right_w: 1,
-    right_l: 1,
-    left_h: 1,
-    left_w: 1,
-    left_l: 1,
+    right_h: "",
+    right_w: "",
+    right_l: "",
+    left_h: "",
+    left_w: "",
+    left_l: "",
   });
 
   const [tirVolume, setTirVolume] = useState({
@@ -48,6 +48,21 @@ function TirVolume() {
     return setTirVolume(volume);
   }
 
+  function resetState() {
+    setTirLinearParams({
+      isthmus: "",
+
+      right_h: "",
+      right_w: "",
+      right_l: "",
+      left_h: "",
+      left_w: "",
+      left_l: "",
+    });
+
+    setTirVolume({ volRightLobe: 0, volLeftLobe: 0, sumVolume: 0 });
+  }
+
   return (
     <div className="component tirVolume">
       <h2 className="component-title">Расчет объема щитовидной железы</h2>
@@ -61,6 +76,7 @@ function TirVolume() {
               name="isthmus"
               id="isthmus"
               type="number"
+              value={tirLinearParams.isthmus}
             />
             мм
           </span>
@@ -74,6 +90,7 @@ function TirVolume() {
               name="right_h"
               id="tirVolume-rightLobe-h"
               type="number"
+              value={tirLinearParams.right_h}
             />
             мм
           </span>
@@ -86,6 +103,7 @@ function TirVolume() {
               name="right_w"
               id="tirVolume-rightLobe-w"
               type="number"
+              value={tirLinearParams.right_w}
             />
             мм
           </span>
@@ -98,6 +116,7 @@ function TirVolume() {
               name="right_l"
               id="tirVolume-rightLobe-l"
               type="number"
+              value={tirLinearParams.right_l}
             />
             мм
           </span>
@@ -111,6 +130,7 @@ function TirVolume() {
               name="left_h"
               id="tirVolume-leftLobe-h"
               type="number"
+              value={tirLinearParams.left_h}
             />
             мм
           </span>
@@ -123,6 +143,7 @@ function TirVolume() {
               name="left_w"
               id="tirVolume-leftLobe-w"
               type="number"
+              value={tirLinearParams.left_w}
             />
             мм
           </span>
@@ -135,6 +156,7 @@ function TirVolume() {
               name="left_l"
               id="tirVolume-leftLobe-l"
               type="number"
+              value={tirLinearParams.left_l}
             />
             мм
           </span>
@@ -151,6 +173,9 @@ function TirVolume() {
         tirVolume={tirVolume}
         tirLinearParams={tirLinearParams}
       />
+      <button className="tirVolume-resetBtn" onClick={() => resetState()}>
+        Reset
+      </button>
     </div>
   );
 }
