@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import TelegramIcon from "../Icons/TelegramIcon";
 import EmailIcon from "../Icons/EmailIcon";
 import GitHubIcon from "../Icons/GitHubIcon";
@@ -8,14 +8,14 @@ function Footer() {
     <div className="footer">
       <ul className="footer-nav">
         <li>
-          <NavLink className="navbar-link" to="/links">
+          <Link className="footer-link" to="/links">
             Ссылки
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink className="navbar-link" to="/about">
+          <Link className="footer-link" to="/about">
             О приложении
-          </NavLink>
+          </Link>
         </li>
       </ul>
 
