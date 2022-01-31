@@ -1,3 +1,7 @@
+.links {
+  width: 900px;
+}
+
 .links-list {
   max-width: 900px;
   padding: 10px;
@@ -7,4 +11,10 @@
 
 .links-list ul li {
   margin-top: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .links {
+    width: 100%;
+  }
 }

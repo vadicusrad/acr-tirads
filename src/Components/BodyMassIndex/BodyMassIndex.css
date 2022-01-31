@@ -1,32 +1,30 @@
 .bodyMassIndex-inputs {
   background: rgba(120, 135, 163, 0.212);
   box-shadow: 0px 0px 15px 0px rgb(34 60 80 / 44%);
-  padding: 20px 15px 15px 15px;
+  padding: 35px 15px 15px 15px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
+
 .bodyMassIndex-inputs input {
-  margin: 10px;
+  margin: 5px;
+  font-size: 1.3rem;
 }
+
 .bodyMassIndex-result {
   text-align: center;
   padding: 15px;
-}
-
-.bodyMassIndex-resetBtn {
-  font-size: 1.2rem;
-  padding: 10px;
-  background-color: rgb(240, 102, 60);
-  border: none;
-  color: wheat;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 10px;
 }
 
 @media screen and (max-width: 500px) {
   .bodyMassIndex {
     padding: 10px;
   }
+
   .bodyMassIndex-inputs {
     display: flex;
     flex-direction: column;
@@ -36,6 +34,7 @@
   .bodyMassIndex-inputs input {
     font-size: 1.3rem;
   }
+
   .bodyMassIndex-result {
     font-size: 1.4rem;
   }

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .app {
   margin: 0 auto;
   width: 100%;
@@ -5,11 +9,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-sizing: border-box;
 }
+
 h1 {
   text-align: center;
 }
+
 h3,
 h4 {
   margin: 0;
@@ -34,7 +39,11 @@ h4 {
 
 .component {
   min-height: 79vh;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
 }
+
 .component-title {
   text-align: center;
   padding-left: 10px;
@@ -51,15 +60,18 @@ h4 {
     text-align: center;
     font-size: 1.4rem;
   }
+
   .node {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
   }
+
   label {
     margin-top: 5px;
     margin-bottom: 5px;
   }
+
   input {
     display: inline-block;
     width: auto;
@@ -71,7 +83,13 @@ h4 {
   .nodeCriterion {
     width: 100%;
   }
+
   .question-window {
     width: 95%;
+  }
+
+  .component {
+    width: 100%;
+    font-size: 1.3rem;
   }
 }

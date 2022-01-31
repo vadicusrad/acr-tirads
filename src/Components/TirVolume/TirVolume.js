@@ -3,6 +3,7 @@ import "./TirVolume.css";
 import TirResultParams from "../TirResultParams/TirResultParams";
 import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
+import ResetBtn from "../ResetBtn/ResetBtn";
 
 function TirVolume() {
   const [tirLinearParams, setTirLinearParams] = useState({
@@ -61,6 +62,19 @@ function TirVolume() {
     });
 
     setTirVolume({ volRightLobe: 0, volLeftLobe: 0, sumVolume: 0 });
+  }
+
+  function yo() {
+    setTirLinearParams({
+      isthmus: "",
+
+      right_h: "",
+      right_w: "",
+      right_l: "",
+      left_h: "",
+      left_w: "",
+      left_l: "",
+    });
   }
 
   return (
@@ -173,9 +187,8 @@ function TirVolume() {
         tirVolume={tirVolume}
         tirLinearParams={tirLinearParams}
       />
-      <button className="tirVolume-resetBtn" onClick={() => resetState()}>
-        Очистить
-      </button>
+
+      <ResetBtn reset={resetState} />
     </div>
   );
 }
