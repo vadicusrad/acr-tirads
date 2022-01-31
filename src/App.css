@@ -37,6 +37,8 @@ h4 {
 }
 .component-title {
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 1024px) {

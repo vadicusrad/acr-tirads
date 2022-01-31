@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 
 function Navbar() {
@@ -49,58 +49,58 @@ function Navbar() {
       >
         <ul className="navbar-burger-links">
           <li>
-            <NavLink
+            <Link
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/"
             >
               TIRADS
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/tireoid_volume"
             >
               Обьем щитовидной железы
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/prostate_volume"
             >
               Объем простаты
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/body_mass_index"
             >
               Индекс массы тела
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/links"
             >
               Ссылки
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/about"
             >
               О приложении
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </div>

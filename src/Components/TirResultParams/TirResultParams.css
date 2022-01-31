@@ -8,6 +8,7 @@
 
 .tirResult-lobes {
   display: flex;
+  justify-content: center;
 }
 
 .tirResult-isthmus {
