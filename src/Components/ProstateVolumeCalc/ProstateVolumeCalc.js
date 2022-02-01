@@ -1,9 +1,10 @@
 import "./ProstateVolumeCalc.css";
-import CommonVolumeCalc from "../CommonVolumeCalc/CommonVolumeCalc";
+// import CommonVolumeCalc from "../CommonVolumeCalc/CommonVolumeCalc";
 import { useState } from "react";
 import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
 import ResetBtn from "../ResetBtn/ResetBtn";
+import calcEllipseVolume from "../../helpers/calcEllipseVolume";
 
 function ProstateVolumeCalc() {
   const [prostateParams, setProstateParams] = useState({
@@ -73,7 +74,15 @@ function ProstateVolumeCalc() {
         </span>
       </div>
       <div className="prostateVolumeCalc-result">
-        <h3>Объем железы: {CommonVolumeCalc(prostateParams)} см3</h3>
+        <h3>
+          Объем железы:{" "}
+          {calcEllipseVolume(
+            prostateParams.prostateHight,
+            prostateParams.prostateWidth,
+            prostateParams.prostateLength
+          )}{" "}
+          см3
+        </h3>
       </div>
       <ResetBtn reset={resetState} />
     </div>
