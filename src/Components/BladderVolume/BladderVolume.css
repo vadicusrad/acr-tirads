@@ -1,4 +1,5 @@
 .bladderVolume {
+  width: 500px;
 }
 
 .bladderVolume-inputs {
@@ -24,6 +25,16 @@
   justify-content: center;
   padding: 15px;
 }
+
 .bladderVolume-result h3 {
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .bladderVolume {
+    width: 100%;
+  }
+  .bladderVolume-inputs input {
+    width: 200px;
+  }
 }

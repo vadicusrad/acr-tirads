@@ -1,5 +1,5 @@
 .tirVolume {
-  /* width: 500px; */
+  width: 500px;
 }
 
 .tirVolume label {
@@ -54,4 +54,10 @@ hr {
   background-color: rgba(41, 41, 41, 0.356);
   height: 1px;
   width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .tirVolume {
+    width: 100%;
+  }
 }

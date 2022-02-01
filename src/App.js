@@ -10,6 +10,7 @@ import TirVolume from "./Components/TirVolume/TirVolume";
 import ProstateVolumeCalc from "./Components/ProstateVolumeCalc/ProstateVolumeCalc";
 import BodyMassIndex from "./Components/BodyMassIndex/BodyMassIndex";
 import BladderVolume from "./Components/BladderVolume/BladderVolume";
+import Menu from "./Components/Menu/Menu";
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);
@@ -60,7 +61,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="links" element={<Links />} />
           <Route path="bladder_volume" element={<BladderVolume />} />
-
+          <Route path="menu" element={<Menu />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
