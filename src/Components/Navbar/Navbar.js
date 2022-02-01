@@ -12,39 +12,10 @@ function Navbar() {
       <a className="navbar-logo" href="/">
         Ultrasound Assistant
       </a>
-      <ul className="navbar-links">
-        <li>
-          <NavLink className="navbar-link" to="/">
-            TIRADS
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="navbar-link" to="/tireoid_volume">
-            Обьем щитовидной железы
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="navbar-link" to="/prostate_volume">
-            Объем простаты
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="navbar-link" to="/bladder_volume">
-            Объем мочевого пузыря
-          </NavLink>
-        </li>
-        <li>
-          <NavLink className="navbar-link" to="/body_mass_index">
-            Индекс массы тела
-          </NavLink>
-        </li>
 
-        <li>
-          <NavLink className="navbar-link" to="/links">
-            Ссылки
-          </NavLink>
-        </li>
-      </ul>
+      <div className="navbar-menu-opener" onClick={() => toggleBurgerMenu()}>
+        <span>Выбрать инструмент</span>
+      </div>
       <div className="navbar-burger" onClick={() => toggleBurgerMenu()}>
         <span></span>
       </div>
@@ -55,67 +26,67 @@ function Navbar() {
       >
         <ul className="navbar-burger-links">
           <li>
-            <Link
+            <NavLink
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/"
             >
               TIRADS
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/tireoid_volume"
             >
-              Обьем щитовидной железы
-            </Link>
+              Объем щитовидной железы
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/prostate_volume"
             >
               Объем простаты
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/bladder_volume"
             >
               Объем мочевого пузыря
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/body_mass_index"
             >
               Индекс массы тела
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/links"
             >
               Ссылки
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               onClick={() => toggleBurgerMenu()}
               className="navbar-burger-link"
               to="/about"
             >
               О приложении
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
