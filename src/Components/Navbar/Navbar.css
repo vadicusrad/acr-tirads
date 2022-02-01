@@ -153,4 +153,15 @@
   .navbar-burger {
     display: flex;
   }
+
+  .navbar-burger-links {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-burger-links {
+    grid-template-columns: 1fr;
+  }
 }
