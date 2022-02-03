@@ -91,8 +91,8 @@ function TirVolume() {
               id="isthmus"
               type="number"
               value={tirLinearParams.isthmus}
+              placeholder="мм"
             />
-            мм
           </span>
         </label>
         <hr />
@@ -105,8 +105,8 @@ function TirVolume() {
               id="tirVolume-rightLobe-h"
               type="number"
               value={tirLinearParams.right_h}
+              placeholder="мм"
             />
-            мм
           </span>
         </label>
         <label htmlFor="tirVolume-rightLobe-w">
@@ -118,8 +118,8 @@ function TirVolume() {
               id="tirVolume-rightLobe-w"
               type="number"
               value={tirLinearParams.right_w}
+              placeholder="мм"
             />
-            мм
           </span>
         </label>
         <label htmlFor="tirVolume-rightLobe-l">
@@ -131,8 +131,8 @@ function TirVolume() {
               id="tirVolume-rightLobe-l"
               type="number"
               value={tirLinearParams.right_l}
+              placeholder="мм"
             />
-            мм
           </span>
         </label>
         <hr />
@@ -145,8 +145,8 @@ function TirVolume() {
               id="tirVolume-leftLobe-h"
               type="number"
               value={tirLinearParams.left_h}
+              placeholder="мм"
             />
-            мм
           </span>
         </label>
         <label htmlFor="tirVolume-leftLobe-w">
@@ -158,8 +158,8 @@ function TirVolume() {
               id="tirVolume-leftLobe-w"
               type="number"
               value={tirLinearParams.left_w}
+              placeholder="мм"
             />
-            мм
           </span>
         </label>
         <label htmlFor="tirVolume-leftLobe-l">
@@ -171,8 +171,8 @@ function TirVolume() {
               id="tirVolume-leftLobe-l"
               type="number"
               value={tirLinearParams.left_l}
+              placeholder="мм"
             />
-            мм
           </span>
         </label>
         <button
