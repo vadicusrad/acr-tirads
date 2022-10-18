@@ -34,15 +34,6 @@ function Footer() {
             <EmailIcon />
           </a>
         </li>
-        <li>
-          <a
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            href="https://github.com/vadicusrad"
-          >
-            <GitHubIcon />
-          </a>
-        </li>
       </ul>
 
       <div className="footer-info">

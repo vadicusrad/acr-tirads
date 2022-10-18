@@ -4,54 +4,52 @@ import { useState, useEffect } from "react";
 import toggle from "../../helpers/toggler";
 
 function Navbar() {
-  const [burgerIsOpen, setBurgerIsOpen] = useState(false);
-  // const toggleBurgerMenu = () => {
-  //   setBurgerIsOpen(!burgerIsOpen);
-  // };
-  const navigate = useNavigate();
+	const [burgerIsOpen, setBurgerIsOpen] = useState(false);
 
-  const goBack = () => {
-    navigate(-1);
-  };
+	const navigate = useNavigate();
 
-  useEffect(() => {
-    return function () {
-      setBurgerIsOpen(!burgerIsOpen);
-    };
-  }, []);
-  console.log(burgerIsOpen);
-  return (
-    <div className="navbar">
-      <a className="navbar-logo" href="/">
-        Ultrasound Assistant
-      </a>
-      <NavLink
-        onClick={() => {
-          toggle(burgerIsOpen, setBurgerIsOpen);
-          if (burgerIsOpen) {
-            goBack();
-          }
-        }}
-        className="navbar-menu-opener"
-        to="/menu"
-      >
-        Выбрать инструмент
-      </NavLink>
+	const goBack = () => {
+		navigate(-1);
+	};
 
-      <NavLink
-        onClick={() => {
-          toggle(burgerIsOpen, setBurgerIsOpen);
-          if (burgerIsOpen) {
-            goBack();
-          }
-        }}
-        className="navbar-burger"
-        to="/menu"
-      >
-        <span></span>
-      </NavLink>
-    </div>
-  );
+	useEffect(() => {
+		return function () {
+			setBurgerIsOpen(!burgerIsOpen);
+		};
+	}, []);
+
+	return (
+		<div className="navbar">
+			<a className="navbar-logo" href="/">
+				Ultrasound Assistant
+			</a>
+			<NavLink
+				onClick={() => {
+					toggle(burgerIsOpen, setBurgerIsOpen);
+					if (burgerIsOpen) {
+						goBack();
+					}
+				}}
+				className="navbar-menu-opener"
+				to="/menu"
+			>
+				Выбрать инструмент
+			</NavLink>
+
+			<NavLink
+				onClick={() => {
+					toggle(burgerIsOpen, setBurgerIsOpen);
+					if (burgerIsOpen) {
+						goBack();
+					}
+				}}
+				className="navbar-burger"
+				to="/menu"
+			>
+				<span></span>
+			</NavLink>
+		</div>
+	);
 }
 
 export default Navbar;
