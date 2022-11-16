@@ -48,7 +48,7 @@ function NodeEchogenicity({ editObject }) {
           value={3}
           onClick={(e) => editObject(e.target.name, e.target.value)}
         />
-        Выраженно гиперэхогенный
+        Выраженно гипоэхогенный
       </label>
     </div>
   );
