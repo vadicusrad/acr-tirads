@@ -1,7 +1,8 @@
 import "./Navbar.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import toggle from "../../helpers/toggler";
+import toggle from "../../functions/toggler";
+
 
 function Navbar() {
 	const [burgerIsOpen, setBurgerIsOpen] = useState(false);

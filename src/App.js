@@ -11,6 +11,7 @@ import ProstateVolumeCalc from "./Components/ProstateVolumeCalc/ProstateVolumeCa
 import BodyMassIndex from "./Components/BodyMassIndex/BodyMassIndex";
 import BladderVolume from "./Components/BladderVolume/BladderVolume";
 import Menu from "./Components/Menu/Menu";
+import BodySurfaceArea from "./Components/BodySurfaceArea/BodySurfaceArea";
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);
@@ -61,6 +62,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="links" element={<Links />} />
           <Route path="bladder_volume" element={<BladderVolume />} />
+          <Route path="body_surface_area" element={<BodySurfaceArea />} />
           <Route path="menu" element={<Menu />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

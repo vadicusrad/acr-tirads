@@ -64,19 +64,6 @@ function TirVolume() {
     setTirVolume({ volRightLobe: 0, volLeftLobe: 0, sumVolume: 0 });
   }
 
-  function yo() {
-    setTirLinearParams({
-      isthmus: "",
-
-      right_h: "",
-      right_w: "",
-      right_l: "",
-      left_h: "",
-      left_w: "",
-      left_l: "",
-    });
-  }
-
   return (
     <div className="component tirVolume">
       <h2 className="component-title">Расчет объема щитовидной железы</h2>
@@ -177,7 +164,7 @@ function TirVolume() {
         </label>
         <button
           onClick={() => calcVolume(tirLinearParams)}
-          className="tirVolume-calcBtn"
+          className="ok-btn"
         >
           Рассчитать
         </button>

@@ -44,7 +44,13 @@ function Menu() {
         >
           Индекс массы тела
         </NavLink>
-
+        <NavLink
+          //   onClick={() => toggleBurgerMenu()}
+          className="menu-link"
+          to="/body_surface_area"
+        >
+          Площадь поверхности тела
+        </NavLink>
         <NavLink
           //   onClick={() => toggleBurgerMenu()}
           className="menu-link"

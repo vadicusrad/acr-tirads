@@ -1,0 +1,59 @@
+.bodySurfaveArea {
+    width: 500px;
+}
+
+.bodySurfaveArea-inputs {
+box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(120, 135, 163, 0.212);
+  box-shadow: 0px 0px 15px 0px rgb(34 60 80 / 44%);
+  padding: 30px 15px 15px 15px;
+  position: relative;
+  width: 100%;
+}
+
+.bodySurfaveArea-inputs span{
+        display: flex;
+        justify-content: space-around;
+    }
+
+.bodySurfaceArea-input {
+    width: 45%;
+    height: 30px;
+    margin: 5px;
+    font-size: 1.3rem;
+}
+
+.bodySurfaceArea_calc {
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: rgb(43, 122, 226);
+    border: none;
+    color: wheat;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.bodySurfArea_result {
+
+     display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .bodySurfaveArea {
+      width: 100%;
+    }
+    .bodySurfaveArea-inputs span {
+        flex-direction: column;
+        align-items: center;
+      }
+    .bodySurfaveArea-inputs input {
+      width: 90%;
+      margin-top:10px;
+    }
+  }

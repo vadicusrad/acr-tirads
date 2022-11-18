@@ -3,7 +3,8 @@ import { useState } from "react";
 import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
 import ResetBtn from "../ResetBtn/ResetBtn";
-import calcEllipseVolume from "../../helpers/calcEllipseVolume";
+import calcEllipseVolume from "../../functions/calcEllipseVolume";
+
 
 function ProstateVolumeCalc() {
   const [prostateParams, setProstateParams] = useState({
