@@ -50,10 +50,8 @@ function App() {
           <Route
             index
             element={
-              <Tirads
-                editObject={editObject}
-                compositionCount={compositionCount}
-              />
+         
+              <Menu />
             }
           />
           <Route path="tireoid_volume" element={<TirVolume />} />
@@ -64,6 +62,10 @@ function App() {
           <Route path="bladder_volume" element={<BladderVolume />} />
           <Route path="body_surface_area" element={<BodySurfaceArea />} />
           <Route path="menu" element={<Menu />} />
+          <Route path="tirads" element={ <Tirads
+                editObject={editObject}
+                compositionCount={compositionCount}
+              />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

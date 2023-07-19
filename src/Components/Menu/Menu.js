@@ -6,15 +6,13 @@ function Menu() {
     <div className="menu">
       <div className="menu-links">
         <NavLink
-          //   onClick={() => toggleBurgerMenu()}
           className="menu-link"
-          to="/"
+          to="/tirads"
         >
           TIRADS
         </NavLink>
 
         <NavLink
-          //   onClick={() => toggleBurgerMenu()}
           className="menu-link"
           to="/tireoid_volume"
         >
@@ -22,7 +20,6 @@ function Menu() {
         </NavLink>
 
         <NavLink
-          //   onClick={() => toggleBurgerMenu()}
           className="menu-link"
           to="/prostate_volume"
         >
@@ -30,7 +27,6 @@ function Menu() {
         </NavLink>
 
         <NavLink
-          //   onClick={() => toggleBurgerMenu()}
           className="menu-link"
           to="/bladder_volume"
         >
@@ -38,21 +34,18 @@ function Menu() {
         </NavLink>
 
         <NavLink
-          //   onClick={() => toggleBurgerMenu()}
           className="menu-link"
           to="/body_mass_index"
         >
           Индекс массы тела
         </NavLink>
         <NavLink
-          //   onClick={() => toggleBurgerMenu()}
           className="menu-link"
           to="/body_surface_area"
         >
           Площадь поверхности тела
         </NavLink>
         <NavLink
-          //   onClick={() => toggleBurgerMenu()}
           className="menu-link"
           to="/links"
         >
@@ -60,7 +53,6 @@ function Menu() {
         </NavLink>
 
         <NavLink
-          //   onClick={() => toggleBurgerMenu()}
           className="menu-link"
           to="/about"
         >

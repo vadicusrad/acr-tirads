@@ -23,8 +23,6 @@ function BodyMassIndex() {
 
   function resetState() {
     setBodyParams({ mass: "", height: "" });
-
-    // bodyMassIndexCalc(1, 1);
   }
 
   return (

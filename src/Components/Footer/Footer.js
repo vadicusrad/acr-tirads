@@ -2,7 +2,6 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import TelegramIcon from "../Icons/TelegramIcon";
 import EmailIcon from "../Icons/EmailIcon";
-import GitHubIcon from "../Icons/GitHubIcon";
 function Footer() {
   return (
     <div className="footer">

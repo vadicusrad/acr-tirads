@@ -9,15 +9,11 @@ function Navbar() {
 
 	const navigate = useNavigate();
 
-	const goBack = () => {
-		navigate(-1);
-	};
-
 	useEffect(() => {
 		return function () {
 			setBurgerIsOpen(!burgerIsOpen);
 		};
-	}, []);
+	}, [burgerIsOpen]);
 
 	return (
 		<div className="navbar">
@@ -28,11 +24,12 @@ function Navbar() {
 				onClick={() => {
 					toggle(burgerIsOpen, setBurgerIsOpen);
 					if (burgerIsOpen) {
-						goBack();
+				
+						navigate("/");
 					}
 				}}
 				className="navbar-menu-opener"
-				to="/menu"
+				to="/"
 			>
 				Выбрать инструмент
 			</NavLink>
@@ -41,11 +38,12 @@ function Navbar() {
 				onClick={() => {
 					toggle(burgerIsOpen, setBurgerIsOpen);
 					if (burgerIsOpen) {
-						goBack();
+				
+						navigate("/");
 					}
 				}}
 				className="navbar-burger"
-				to="/menu"
+				to="/"
 			>
 				<span></span>
 			</NavLink>
