@@ -1,17 +1,17 @@
 // import "./App.css";
-import { useCallback, useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import About from "./Components/About/About";
-import Links from "./Components/Links/Links";
-import Tirads from "./Components/Tirads/Tirads";
-import NotFoundPage from "./Components/NotFoundPage/NotFoundPage";
-import Layout from "./Components/Layout/Layout";
-import TirVolume from "./Components/TirVolume/TirVolume";
-import ProstateVolumeCalc from "./Components/ProstateVolumeCalc/ProstateVolumeCalc";
-import BodyMassIndex from "./Components/BodyMassIndex/BodyMassIndex";
-import BladderVolume from "./Components/BladderVolume/BladderVolume";
-import Menu from "./Components/Menu/Menu";
-import BodySurfaceArea from "./Components/BodySurfaceArea/BodySurfaceArea";
+import { useCallback, useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import About from './Components/About/About';
+import Links from './Components/Links/Links';
+import Tirads from './Components/Tirads/Tirads';
+import NotFoundPage from './Components/NotFoundPage/NotFoundPage';
+import Layout from './Components/Layout';
+import TirVolume from './Components/TirVolume/TirVolume';
+import ProstateVolumeCalc from './Components/ProstateVolumeCalc/ProstateVolumeCalc';
+import BodyMassIndex from './Components/BodyMassIndex/BodyMassIndex';
+import BladderVolume from './Components/BladderVolume/BladderVolume';
+import Menu from './Components/Menu';
+import BodySurfaceArea from './Components/BodySurfaceArea/BodySurfaceArea';
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);
@@ -44,23 +44,28 @@ function App() {
   }, [pointState]);
 
   return (
-    <div className="app">
+    <div className='app'>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Menu />}/>
-          <Route path="tireoid_volume" element={<TirVolume />} />
-          <Route path="prostate_volume" element={<ProstateVolumeCalc />} />
-          <Route path="body_mass_index" element={<BodyMassIndex />} />
-          <Route path="about" element={<About />} />
-          <Route path="links" element={<Links />} />
-          <Route path="bladder_volume" element={<BladderVolume />} />
-          <Route path="body_surface_area" element={<BodySurfaceArea />} />
-          <Route path="menu" element={<Menu />} />
-          <Route path="tirads" element={ <Tirads
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Menu />} />
+          <Route path='tireoid_volume' element={<TirVolume />} />
+          <Route path='prostate_volume' element={<ProstateVolumeCalc />} />
+          <Route path='body_mass_index' element={<BodyMassIndex />} />
+          <Route path='about' element={<About />} />
+          <Route path='links' element={<Links />} />
+          <Route path='bladder_volume' element={<BladderVolume />} />
+          <Route path='body_surface_area' element={<BodySurfaceArea />} />
+          <Route path='menu' element={<Menu />} />
+          <Route
+            path='tirads'
+            element={
+              <Tirads
                 editObject={editObject}
                 compositionCount={compositionCount}
-              />} />
-          <Route path="*" element={<NotFoundPage />} />
+              />
+            }
+          />
+          <Route path='*' element={<NotFoundPage />} />
         </Route>
       </Routes>
     </div>
