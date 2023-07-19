@@ -46,7 +46,7 @@ function Footer() {
             Vadicus
           </a>
         </p>
-        <p>2021 - 2022</p>
+        <p>2021 - {new Date().getFullYear()}</p>
       </div>
     </div>
   );
