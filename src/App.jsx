@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import { useCallback, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import About from "./Components/About/About";
@@ -47,13 +47,7 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route
-            index
-            element={
-         
-              <Menu />
-            }
-          />
+          <Route index element={<Menu />}/>
           <Route path="tireoid_volume" element={<TirVolume />} />
           <Route path="prostate_volume" element={<ProstateVolumeCalc />} />
           <Route path="body_mass_index" element={<BodyMassIndex />} />
