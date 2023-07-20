@@ -8,10 +8,10 @@ import NotFoundPage from './Components/NotFoundPage/NotFoundPage';
 import Layout from './Components/Layout';
 import TirVolume from './Components/TirVolume/TirVolume';
 import ProstateVolumeCalc from './Components/ProstateVolumeCalc';
-import BodyMassIndex from './Components/BodyMassIndex/BodyMassIndex';
+import BodyMassIndex from './Components/BodyMassIndex';
 import BladderVolume from './Components/BladderVolume';
 import Menu from './Components/Menu';
-import BodySurfaceArea from './Components/BodySurfaceArea/BodySurfaceArea';
+import BodySurfaceArea from './Components/BodySurfaceArea';
 
 function App() {
   const [compositionCount, setCompositionCount] = useState(0);

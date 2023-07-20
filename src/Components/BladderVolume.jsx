@@ -47,7 +47,7 @@ function BladderVolume() {
       <Paper
         elevation={3}
         sx={{
-          padding: '20px 20px 40px 20px',
+          padding: '20px 30px 40px 30px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
