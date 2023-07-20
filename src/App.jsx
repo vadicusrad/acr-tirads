@@ -9,7 +9,7 @@ import Layout from './Components/Layout';
 import TirVolume from './Components/TirVolume/TirVolume';
 import ProstateVolumeCalc from './Components/ProstateVolumeCalc';
 import BodyMassIndex from './Components/BodyMassIndex/BodyMassIndex';
-import BladderVolume from './Components/BladderVolume/BladderVolume';
+import BladderVolume from './Components/BladderVolume';
 import Menu from './Components/Menu';
 import BodySurfaceArea from './Components/BodySurfaceArea/BodySurfaceArea';
 
