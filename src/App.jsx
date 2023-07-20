@@ -7,7 +7,7 @@ import Tirads from './Components/Tirads/Tirads';
 import NotFoundPage from './Components/NotFoundPage/NotFoundPage';
 import Layout from './Components/Layout';
 import TirVolume from './Components/TirVolume/TirVolume';
-import ProstateVolumeCalc from './Components/ProstateVolumeCalc/ProstateVolumeCalc';
+import ProstateVolumeCalc from './Components/ProstateVolumeCalc';
 import BodyMassIndex from './Components/BodyMassIndex/BodyMassIndex';
 import BladderVolume from './Components/BladderVolume/BladderVolume';
 import Menu from './Components/Menu';

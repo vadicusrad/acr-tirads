@@ -3,7 +3,7 @@ import "./TirVolume.css";
 import TirResultParams from "../TirResultParams/TirResultParams";
 import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
-import ResetBtn from "../ResetBtn/ResetBtn";
+// import ResetBtn from "../ResetBtn/ResetBtn";
 
 function TirVolume() {
   const [tirLinearParams, setTirLinearParams] = useState({
@@ -175,7 +175,7 @@ function TirVolume() {
         tirLinearParams={tirLinearParams}
       />
 
-      <ResetBtn reset={resetState} />
+      {/* <ResetBtn reset={resetState} /> */}
     </div>
   );
 }

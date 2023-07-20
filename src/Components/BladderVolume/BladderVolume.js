@@ -1,5 +1,5 @@
 import "./BladderVolume.css";
-import ResetBtn from "../ResetBtn/ResetBtn";
+// import ResetBtn from "../ResetBtn/ResetBtn";
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
 import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
 import { useState } from "react";
@@ -82,7 +82,7 @@ function BladderVolume() {
           см3
         </h3>
       </div>
-      <ResetBtn reset={resetState} />
+      {/* <ResetBtn reset={resetState} /> */}
     </div>
   );
 }

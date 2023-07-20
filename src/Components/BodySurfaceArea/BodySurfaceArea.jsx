@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import QuestionIcon from '../Icons/QuestionIcon/QuestionIcon';
 import REFERENCEINFORMATION from '../ReferenceInformation/ReferenceInformation';
 import calcBodySurfaceArea from '../../functions/calcBodySurfaceArea';
-import ResetBtn from '../ResetBtn/ResetBtn';
+// import ResetBtn from '../ResetBtn/ResetBtn';
 
 const BodySurfaceArea = () => {
   const [bodyParams, setBodyParams] = useState({
@@ -74,7 +74,7 @@ const BodySurfaceArea = () => {
         <h3>Площадь поверхности тела: {bodyParams.bodySurfArea} кв.метров</h3>
       </div>
 
-      <ResetBtn reset={clearResult} />
+      {/* <ResetBtn reset={clearResult} /> */}
     </div>
   );
 };

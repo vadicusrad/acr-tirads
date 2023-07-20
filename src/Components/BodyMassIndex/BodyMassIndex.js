@@ -2,7 +2,7 @@ import "./BodyMassIndex.css";
 import { useState } from "react";
 import QuestionIcon from "../Icons/QuestionIcon/QuestionIcon";
 import REFERENCEINFORMATION from "../ReferenceInformation/ReferenceInformation";
-import ResetBtn from "../ResetBtn/ResetBtn";
+// import ResetBtn from "../ResetBtn/ResetBtn";
 
 function BodyMassIndex() {
   const [bodyParams, setBodyParams] = useState({ mass: "", height: "" });
@@ -61,7 +61,7 @@ function BodyMassIndex() {
           {bodyMassIndexCalc(bodyParams.mass, bodyParams.height)}
         </h3>
       </div>
-      <ResetBtn reset={resetState} />
+      {/* <ResetBtn reset={resetState} /> */}
     </div>
   );
 }

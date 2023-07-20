@@ -16,6 +16,7 @@ const GridMenuItem = ({ title, to }) => {
             component={RouterLink}
             to={to}
             color='inherit'
+            textAlign={'center'}
             sx={{
               textDecoration: 'none',
               height: '100%',
