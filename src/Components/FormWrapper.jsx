@@ -5,7 +5,7 @@ const FormWrapper = ({ children }) => {
   return (
     <Container
       sx={{
-        height: '100vh',
+        minHeight: '100vh',
         marginTop: {
           xs: '70px',
           sm: '100px',
@@ -15,6 +15,7 @@ const FormWrapper = ({ children }) => {
         justifyContent: 'start',
         alignItems: 'center',
         gap: '20px',
+        paddingBottom: '50px',
       }}
     >
       {children}

@@ -94,15 +94,24 @@ const BodySurfaceArea = () => {
             label='Масса тела в кг'
             variant='filled'
           />
-
-          <Button
-            size='medium'
-            variant='contained'
-            color='success'
-            type='submit'
-          >
-            Рассчитать
-          </Button>
+          <Box display={'flex'} gap={2}>
+            <Button
+              size='medium'
+              variant='contained'
+              color='success'
+              type='submit'
+            >
+              Рассчитать
+            </Button>
+            <Button
+              size='medium'
+              variant='contained'
+              color='error'
+              onClick={clearResult}
+            >
+              Очистить
+            </Button>
+          </Box>
         </Box>
 
         <Box>
@@ -111,14 +120,6 @@ const BodySurfaceArea = () => {
             <br /> {bodyParams.bodySurfArea} кв.метров
           </Typography>
         </Box>
-        <Button
-          size='medium'
-          variant='contained'
-          color='error'
-          onClick={clearResult}
-        >
-          Очистить
-        </Button>
       </Paper>
     </FormWrapper>
   );
