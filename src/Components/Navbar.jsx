@@ -1,4 +1,4 @@
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import {
   AppBar,
   Box,
@@ -10,6 +10,8 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar() {
+  const location = useLocation();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position='fixed'>
@@ -31,34 +33,35 @@ function Navbar() {
               Ultrasound Assistant
             </Typography>
 
-            <Button
-              // variant='contained'
-              size='large'
-              color='inherit'
-              component={RouterLink}
-              to='/'
-              sx={{
-                display: {
-                  xs: 'none',
-                  sm: 'flex',
-                },
-              }}
-            >
-              Выбрать инструмент
-            </Button>
-            <Button
-              color='inherit'
-              component={RouterLink}
-              to='/'
-              sx={{
-                display: {
-                  sm: 'none',
-                  xs: 'flex',
-                },
-              }}
-            >
-              <MenuIcon />
-            </Button>
+            <Box display={location.pathname === '/' ? 'none' : 'flex'}>
+              <Button
+                size='large'
+                color='inherit'
+                component={RouterLink}
+                to='/'
+                sx={{
+                  display: {
+                    xs: 'none',
+                    sm: 'flex',
+                  },
+                }}
+              >
+                Выбрать инструмент
+              </Button>
+              <Button
+                color='inherit'
+                component={RouterLink}
+                to='/'
+                sx={{
+                  display: {
+                    sm: 'none',
+                    xs: 'flex',
+                  },
+                }}
+              >
+                <MenuIcon />
+              </Button>
+            </Box>
           </Toolbar>
         </Container>
       </AppBar>

@@ -1,5 +1,3 @@
-// import "./Links.css";
-
 import { Container, List, ListItem, Typography } from '@mui/material';
 import Link from '@mui/material/Link';
 
@@ -36,7 +34,7 @@ function Links() {
         {links.map((link) => (
           <ListItem key={link.link}>
             <Link
-              href={link.title}
+              href={link.link}
               target='_blank'
               rel='nofollow noopener noreferrer'
             >
