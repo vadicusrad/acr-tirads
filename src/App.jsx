@@ -10,8 +10,9 @@ import BodyMassIndex from './Components/BodyMassIndex';
 import BladderVolume from './Components/BladderVolume';
 import Menu from './Components/Menu';
 import BodySurfaceArea from './Components/BodySurfaceArea';
-
+import useAutoScrollToTop from './hooks/autoScrollToTop';
 function App() {
+  useAutoScrollToTop();
   return (
     <div className='app'>
       <Routes>
