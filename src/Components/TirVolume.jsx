@@ -99,7 +99,7 @@ function TirVolume() {
           mt={2}
           position={'relative'}
         >
-          <QuestionIcon reference={REFERENCEINFORMATION.tireoidVolume} />
+          {/* <QuestionIcon reference={REFERENCEINFORMATION.tireoidVolume} /> */}
 
           <TextField
             name='isthmus'

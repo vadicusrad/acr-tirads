@@ -11,25 +11,33 @@ import BladderVolume from './Components/BladderVolume';
 import Menu from './Components/Menu';
 import BodySurfaceArea from './Components/BodySurfaceArea';
 import useAutoScrollToTop from './hooks/autoScrollToTop';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { useThemeContext } from './Components/theme/ThemeContextProvider';
+
 function App() {
+  const { theme } = useThemeContext();
+
   useAutoScrollToTop();
   return (
-    <div className='app'>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Menu />} />
-          <Route path='tirads' element={<Tirads />} />
-          <Route path='tireoid_volume' element={<TirVolume />} />
-          <Route path='prostate_volume' element={<ProstateVolumeCalc />} />
-          <Route path='bladder_volume' element={<BladderVolume />} />
-          <Route path='body_mass_index' element={<BodyMassIndex />} />
-          <Route path='body_surface_area' element={<BodySurfaceArea />} />
-          <Route path='about' element={<About />} />
-          <Route path='links' element={<Links />} />
-          <Route path='*' element={<NotFoundPage />} />
-        </Route>
-      </Routes>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Menu />} />
+            <Route path='tirads' element={<Tirads />} />
+            <Route path='tireoid_volume' element={<TirVolume />} />
+            <Route path='prostate_volume' element={<ProstateVolumeCalc />} />
+            <Route path='bladder_volume' element={<BladderVolume />} />
+            <Route path='body_mass_index' element={<BodyMassIndex />} />
+            <Route path='body_surface_area' element={<BodySurfaceArea />} />
+            <Route path='about' element={<About />} />
+            <Route path='links' element={<Links />} />
+            <Route path='*' element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </ThemeProvider>
+    </>
   );
 }
 

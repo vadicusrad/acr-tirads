@@ -63,7 +63,7 @@ const BodySurfaceArea = () => {
           position={'relative'}
           onSubmit={handleSubmit}
         >
-          <QuestionIcon reference={REFERENCEINFORMATION.bodySurfaceArea} />
+          {/* <QuestionIcon reference={REFERENCEINFORMATION.bodySurfaceArea} /> */}
 
           <TextField
             name='body_length'

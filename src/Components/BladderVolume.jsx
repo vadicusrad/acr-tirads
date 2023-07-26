@@ -64,7 +64,7 @@ function BladderVolume() {
           mt={2}
           position={'relative'}
         >
-          <QuestionIcon reference={REFERENCEINFORMATION.prostateVolumeCalc} />
+          {/* <QuestionIcon reference={REFERENCEINFORMATION.prostateVolumeCalc} /> */}
 
           <TextField
             name='bladderHight'

@@ -61,7 +61,7 @@ function BodyMassIndex() {
           mt={2}
           position={'relative'}
         >
-          <QuestionIcon reference={REFERENCEINFORMATION.bodyMassIndex} />
+          {/* <QuestionIcon reference={REFERENCEINFORMATION.bodyMassIndex} /> */}
           <TextField
             name='mass'
             type='number'
