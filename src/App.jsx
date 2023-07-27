@@ -12,7 +12,7 @@ import Menu from './Components/Menu';
 import BodySurfaceArea from './Components/BodySurfaceArea';
 import useAutoScrollToTop from './hooks/autoScrollToTop';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import { useThemeContext } from './Components/theme/ThemeContextProvider';
+import { useThemeContext } from './theme/ThemeContextProvider';
 
 function App() {
   const { theme } = useThemeContext();

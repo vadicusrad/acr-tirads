@@ -1,9 +1,16 @@
 import { createTheme } from '@mui/material';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import theme from './theme';
 
 const useColorTheme = () => {
-  const [mode, setMode] = useState('light');
+  const savedMode = localStorage.getItem('mode')
+    ? localStorage.getItem('mode')
+    : 'dark';
+
+  const [mode, setMode] = useState(savedMode);
+  useEffect(() => {
+    localStorage.setItem('mode', mode);
+  }, [mode]);
 
   const toggleColorMode = () => {
     setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));

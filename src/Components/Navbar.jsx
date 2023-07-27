@@ -8,7 +8,7 @@ import {
   Typography,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import ThemeSwitcher from './theme/ThemeSwitcher';
+import ThemeSwitcher from '../theme/ThemeSwitcher';
 
 function Navbar() {
   const location = useLocation();
