@@ -1,16 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import { ThemeContextProvider } from './theme/ThemeContextProvider';
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeContextProvider } from "./theme/ThemeContextProvider";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <ThemeContextProvider>
-        <App />
-      </ThemeContextProvider>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+import { createRoot } from "react-dom/client";
+const root = createRoot(document.getElementById("root"));
+root.render(
+  <BrowserRouter>
+    <ThemeContextProvider>
+      <App />
+    </ThemeContextProvider>
+  </BrowserRouter>
 );
