@@ -13,7 +13,7 @@ import BodySurfaceArea from "./Components/BodySurfaceArea";
 import useAutoScrollToTop from "./hooks/autoScrollToTop";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { useThemeContext } from "./theme/ThemeContextProvider";
-import YandexMetrika from "./utils/YandexMetrika";
+
 function App() {
   const { theme } = useThemeContext();
 
@@ -21,7 +21,6 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <YandexMetrika />
         <CssBaseline />
         <Routes>
           <Route path="/" element={<Layout />}>
